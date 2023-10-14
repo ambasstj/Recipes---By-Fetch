@@ -9,6 +9,8 @@ import Foundation
 
 struct K{
     
+    static let reusableCell = "cellIdentifier"
+    
     struct Segues{
         static let loginSeque = "Segue1"
     }

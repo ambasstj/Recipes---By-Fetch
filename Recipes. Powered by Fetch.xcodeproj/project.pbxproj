@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC9C12982AD9CA3600C1AE8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C12972AD9CA3600C1AE8B /* Constants.swift */; };
+		AC9C129A2ADB194B00C1AE8B /* RecipesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */; };
 		ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */; };
 		ACBF5A0D2AD997FF00215D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */; };
 		ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		AC9C12972AD9CA3600C1AE8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableView.swift; sourceTree = "<group>"; };
 		ACBF5A072AD997FF00215D59 /* Recipes. Powered by Fetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes. Powered by Fetch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */,
 				ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */,
 				ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */,
+				AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */,
 				ACBF5A102AD997FF00215D59 /* Main.storyboard */,
 				AC9C12972AD9CA3600C1AE8B /* Constants.swift */,
 				ACBF5A132AD9980000215D59 /* Assets.xcassets */,
@@ -233,6 +236,7 @@
 			files = (
 				ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */,
 				ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */,
+				AC9C129A2ADB194B00C1AE8B /* RecipesTableView.swift in Sources */,
 				ACBF5A0D2AD997FF00215D59 /* SceneDelegate.swift in Sources */,
 				AC9C12982AD9CA3600C1AE8B /* Constants.swift in Sources */,
 			);
