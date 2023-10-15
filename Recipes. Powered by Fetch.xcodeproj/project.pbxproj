@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC101ACF2ADB54BF002DD473 /* pizazz.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC101ACE2ADB54BE002DD473 /* pizazz.mp4 */; };
+		AC101AD12ADC4469002DD473 /* TestVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC101AD02ADC4469002DD473 /* TestVideoController.swift */; };
+		AC101AD32ADC4BE7002DD473 /* App Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC101AD22ADC4BE7002DD473 /* App Video.mp4 */; };
+		AC101AD72ADC4FA9002DD473 /* Sparkles.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC101AD62ADC4FA9002DD473 /* Sparkles.mp4 */; };
+		AC101AD92ADC4FF6002DD473 /* My Movie BQ2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC101AD82ADC4FF6002DD473 /* My Movie BQ2.mp4 */; };
+		AC101ADB2ADC516B002DD473 /* My Movie BQ.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC101ADA2ADC516B002DD473 /* My Movie BQ.mp4 */; };
 		AC9C12982AD9CA3600C1AE8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C12972AD9CA3600C1AE8B /* Constants.swift */; };
 		AC9C129A2ADB194B00C1AE8B /* RecipesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */; };
+		AC9C129F2ADB36F500C1AE8B /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C129D2ADB36F500C1AE8B /* DishCell.swift */; };
+		AC9C12A02ADB36F500C1AE8B /* DishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9C129E2ADB36F500C1AE8B /* DishCell.xib */; };
 		ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */; };
 		ACBF5A0D2AD997FF00215D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */; };
 		ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */; };
@@ -46,8 +54,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC101ACE2ADB54BE002DD473 /* pizazz.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizazz.mp4; sourceTree = "<group>"; };
+		AC101AD02ADC4469002DD473 /* TestVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVideoController.swift; sourceTree = "<group>"; };
+		AC101AD22ADC4BE7002DD473 /* App Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "App Video.mp4"; sourceTree = "<group>"; };
+		AC101AD62ADC4FA9002DD473 /* Sparkles.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sparkles.mp4; sourceTree = "<group>"; };
+		AC101AD82ADC4FF6002DD473 /* My Movie BQ2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "My Movie BQ2.mp4"; sourceTree = "<group>"; };
+		AC101ADA2ADC516B002DD473 /* My Movie BQ.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "My Movie BQ.mp4"; sourceTree = "<group>"; };
 		AC9C12972AD9CA3600C1AE8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableView.swift; sourceTree = "<group>"; };
+		AC9C129D2ADB36F500C1AE8B /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		AC9C129E2ADB36F500C1AE8B /* DishCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishCell.xib; sourceTree = "<group>"; };
 		ACBF5A072AD997FF00215D59 /* Recipes. Powered by Fetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes. Powered by Fetch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,9 +113,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC9C129B2ADB364F00C1AE8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC9C12972AD9CA3600C1AE8B /* Constants.swift */,
+				ACBF5A132AD9980000215D59 /* Assets.xcassets */,
+				AC9C129D2ADB36F500C1AE8B /* DishCell.swift */,
+				AC9C129E2ADB36F500C1AE8B /* DishCell.xib */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC9C129C2ADB365800C1AE8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF5A102AD997FF00215D59 /* Main.storyboard */,
+				ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */,
+				AC101AD02ADC4469002DD473 /* TestVideoController.swift */,
+				AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ACBF59FE2AD997FF00215D59 = {
 			isa = PBXGroup;
 			children = (
+				AC101ACE2ADB54BE002DD473 /* pizazz.mp4 */,
+				AC101AD22ADC4BE7002DD473 /* App Video.mp4 */,
+				AC101AD62ADC4FA9002DD473 /* Sparkles.mp4 */,
+				AC101AD82ADC4FF6002DD473 /* My Movie BQ2.mp4 */,
+				AC101ADA2ADC516B002DD473 /* My Movie BQ.mp4 */,
 				ACBF5A092AD997FF00215D59 /* Recipes. Powered by Fetch */,
 				ACBF5A082AD997FF00215D59 /* Products */,
 			);
@@ -118,11 +161,8 @@
 			children = (
 				ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */,
 				ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */,
-				ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */,
-				AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */,
-				ACBF5A102AD997FF00215D59 /* Main.storyboard */,
-				AC9C12972AD9CA3600C1AE8B /* Constants.swift */,
-				ACBF5A132AD9980000215D59 /* Assets.xcassets */,
+				AC9C129B2ADB364F00C1AE8B /* Model */,
+				AC9C129C2ADB365800C1AE8B /* View */,
 				ACBF5A152AD9980000215D59 /* LaunchScreen.storyboard */,
 				ACBF5A182AD9980000215D59 /* Info.plist */,
 				ACBF5A572AD99D8400215D59 /* GoogleService-Info.plist */,
@@ -220,10 +260,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC101AD72ADC4FA9002DD473 /* Sparkles.mp4 in Resources */,
+				AC101AD32ADC4BE7002DD473 /* App Video.mp4 in Resources */,
+				AC101AD92ADC4FF6002DD473 /* My Movie BQ2.mp4 in Resources */,
 				ACBF5A172AD9980000215D59 /* LaunchScreen.storyboard in Resources */,
 				ACBF5A142AD9980000215D59 /* Assets.xcassets in Resources */,
+				AC9C12A02ADB36F500C1AE8B /* DishCell.xib in Resources */,
 				ACBF5A122AD997FF00215D59 /* Main.storyboard in Resources */,
 				ACBF5A582AD99D8400215D59 /* GoogleService-Info.plist in Resources */,
+				AC101ACF2ADB54BF002DD473 /* pizazz.mp4 in Resources */,
+				AC101ADB2ADC516B002DD473 /* My Movie BQ.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */,
+				AC101AD12ADC4469002DD473 /* TestVideoController.swift in Sources */,
 				ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */,
 				AC9C129A2ADB194B00C1AE8B /* RecipesTableView.swift in Sources */,
+				AC9C129F2ADB36F500C1AE8B /* DishCell.swift in Sources */,
 				ACBF5A0D2AD997FF00215D59 /* SceneDelegate.swift in Sources */,
 				AC9C12982AD9CA3600C1AE8B /* Constants.swift in Sources */,
 			);

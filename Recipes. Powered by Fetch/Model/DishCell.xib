@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="135" id="KGk-i7-Jjw" customClass="DishCell" customModule="Recipes__Powered_by_Fetch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-Yo-AbM">
+                        <rect key="frame" x="0.0" y="0.0" width="305.33333333333331" height="135"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ubh-sE-e6P">
+                                <rect key="frame" x="84.000000000000014" y="1" width="137.33333333333337" height="133"/>
+                                <imageReference key="image" image="Bones" symbolScale="large"/>
+                            </imageView>
+                            <view autoresizesSubviews="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="q5i-d2-BM6">
+                                <rect key="frame" x="0.0" y="0.0" width="84" height="135"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design (34)" translatesAutoresizingMaskIntoConstraints="NO" id="O7L-dv-9R0">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="135"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="O7L-dv-9R0" firstAttribute="top" secondItem="q5i-d2-BM6" secondAttribute="top" id="5I0-o2-Z37"/>
+                                    <constraint firstAttribute="bottom" secondItem="O7L-dv-9R0" secondAttribute="bottom" id="E8y-Wc-T00"/>
+                                    <constraint firstAttribute="width" constant="84" id="dV0-Rx-hJo"/>
+                                    <constraint firstItem="O7L-dv-9R0" firstAttribute="leading" secondItem="q5i-d2-BM6" secondAttribute="leading" id="fw5-F9-A3e"/>
+                                    <constraint firstAttribute="trailing" secondItem="O7L-dv-9R0" secondAttribute="trailing" id="hod-Kw-B7E"/>
+                                </constraints>
+                            </view>
+                            <view autoresizesSubviews="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="OTd-kQ-HPu">
+                                <rect key="frame" x="221.33333333333337" y="0.0" width="84" height="135"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design (34)" translatesAutoresizingMaskIntoConstraints="NO" id="97U-0a-7aS">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="135"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="97U-0a-7aS" secondAttribute="bottom" id="1db-H3-bas"/>
+                                    <constraint firstAttribute="trailing" secondItem="97U-0a-7aS" secondAttribute="trailing" id="HrP-xj-GJf"/>
+                                    <constraint firstItem="97U-0a-7aS" firstAttribute="leading" secondItem="OTd-kQ-HPu" secondAttribute="leading" id="SZC-aI-phS"/>
+                                    <constraint firstItem="97U-0a-7aS" firstAttribute="top" secondItem="OTd-kQ-HPu" secondAttribute="top" id="US9-31-Kd4"/>
+                                    <constraint firstAttribute="width" constant="84" id="rNV-Db-Nch"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="q5i-d2-BM6" secondAttribute="bottom" id="7ab-Qm-eSQ"/>
+                            <constraint firstItem="ubh-sE-e6P" firstAttribute="width" secondItem="f3b-Yo-AbM" secondAttribute="width" multiplier="27:60" id="E3w-od-Wzv"/>
+                            <constraint firstAttribute="trailing" secondItem="OTd-kQ-HPu" secondAttribute="trailing" id="KZ4-Fr-BsI"/>
+                            <constraint firstItem="ubh-sE-e6P" firstAttribute="top" secondItem="f3b-Yo-AbM" secondAttribute="top" constant="1" id="Lhd-Ee-5LK"/>
+                            <constraint firstAttribute="bottom" secondItem="ubh-sE-e6P" secondAttribute="bottom" constant="1" id="Mcl-3F-QPG"/>
+                            <constraint firstItem="ubh-sE-e6P" firstAttribute="centerX" secondItem="f3b-Yo-AbM" secondAttribute="centerX" id="c4Y-O1-1mz"/>
+                            <constraint firstItem="OTd-kQ-HPu" firstAttribute="leading" secondItem="ubh-sE-e6P" secondAttribute="trailing" id="iaD-KW-7hz"/>
+                            <constraint firstItem="OTd-kQ-HPu" firstAttribute="top" secondItem="f3b-Yo-AbM" secondAttribute="top" id="if0-5p-nnA"/>
+                            <constraint firstItem="ubh-sE-e6P" firstAttribute="leading" secondItem="q5i-d2-BM6" secondAttribute="trailing" id="llt-vQ-dH4"/>
+                            <constraint firstItem="q5i-d2-BM6" firstAttribute="leading" secondItem="f3b-Yo-AbM" secondAttribute="leading" id="ne1-tY-EFg"/>
+                            <constraint firstItem="q5i-d2-BM6" firstAttribute="top" secondItem="f3b-Yo-AbM" secondAttribute="top" id="ub7-dA-SQw"/>
+                            <constraint firstAttribute="bottom" secondItem="OTd-kQ-HPu" secondAttribute="bottom" id="yRg-Hg-IaZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="f3b-Yo-AbM" secondAttribute="trailing" id="O2C-kx-BNE"/>
+                    <constraint firstItem="f3b-Yo-AbM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dJE-5k-Q7S"/>
+                    <constraint firstItem="f3b-Yo-AbM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ggN-bJ-eKQ"/>
+                    <constraint firstAttribute="bottom" secondItem="f3b-Yo-AbM" secondAttribute="bottom" id="h5u-Rr-KVv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="desertImage" destination="ubh-sE-e6P" id="WYc-1Q-mtA"/>
+                <outlet property="sparkleVideo" destination="q5i-d2-BM6" id="h0B-iq-mna"/>
+                <outlet property="sparkleVideo2" destination="OTd-kQ-HPu" id="GTF-ux-ZnL"/>
+            </connections>
+            <point key="canvasLocation" x="151.14503816793894" y="-306.69014084507046"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bones" width="270" height="100"/>
+        <image name="Untitled design (34)" width="125" height="125"/>
+    </resources>
+</document>
