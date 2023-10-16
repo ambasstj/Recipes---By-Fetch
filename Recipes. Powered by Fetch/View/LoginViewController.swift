@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
@@ -48,7 +49,7 @@ class LoginViewController: UIViewController {
      //   let registerAlertController = UIAlertController(title: "Register a new account", message: "Complete the fields below", preferredStyle: .alert)
         
         /* registerAlertController.addTextField { UITextField in
-         UITextField.placeholder = "First Name"
+             UITextField.placeholder = "First Name"
          }
          registerAlertController.addTextField { UITextField in
          UITextField.placeholder = "Last Name"
@@ -90,6 +91,7 @@ class LoginViewController: UIViewController {
         
         //This is temporary just to speed up the process as i'm building. Remember to delete later
         self.performSegue(withIdentifier: K.Segues.loginSeque, sender: self)
+    
     }
 }
 

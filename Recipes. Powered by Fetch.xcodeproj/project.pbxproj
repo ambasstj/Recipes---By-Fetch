@@ -17,6 +17,9 @@
 		AC9C129A2ADB194B00C1AE8B /* RecipesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */; };
 		AC9C129F2ADB36F500C1AE8B /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C129D2ADB36F500C1AE8B /* DishCell.swift */; };
 		AC9C12A02ADB36F500C1AE8B /* DishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9C129E2ADB36F500C1AE8B /* DishCell.xib */; };
+		ACB06A622ADC9A3900BBC6AF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ACB06A612ADC9A3900BBC6AF /* IQKeyboardManagerSwift */; };
+		ACB06A642ADCAACC00BBC6AF /* dessertApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06A632ADCAACC00BBC6AF /* dessertApiModel.swift */; };
+		ACB06A662ADCADE000BBC6AF /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06A652ADCADE000BBC6AF /* NetworkRequests.swift */; };
 		ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */; };
 		ACBF5A0D2AD997FF00215D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */; };
 		ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */; };
@@ -64,6 +67,8 @@
 		AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableView.swift; sourceTree = "<group>"; };
 		AC9C129D2ADB36F500C1AE8B /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
 		AC9C129E2ADB36F500C1AE8B /* DishCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishCell.xib; sourceTree = "<group>"; };
+		ACB06A632ADCAACC00BBC6AF /* dessertApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dessertApiModel.swift; sourceTree = "<group>"; };
+		ACB06A652ADCADE000BBC6AF /* NetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
 		ACBF5A072AD997FF00215D59 /* Recipes. Powered by Fetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes. Powered by Fetch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 				ACBF5A2A2AD99A3B00215D59 /* FirebaseAppDistribution-Beta in Frameworks */,
 				ACBF5A2E2AD99A3B00215D59 /* FirebaseAuthCombine-Community in Frameworks */,
 				ACBF5A4C2AD99A3B00215D59 /* FirebasePerformance in Frameworks */,
+				ACB06A622ADC9A3900BBC6AF /* IQKeyboardManagerSwift in Frameworks */,
 				ACBF5A442AD99A3B00215D59 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				ACBF5A522AD99A3B00215D59 /* FirebaseStorage in Frameworks */,
 				ACBF5A362AD99A3B00215D59 /* FirebaseDynamicLinks in Frameworks */,
@@ -117,9 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				AC9C12972AD9CA3600C1AE8B /* Constants.swift */,
-				ACBF5A132AD9980000215D59 /* Assets.xcassets */,
 				AC9C129D2ADB36F500C1AE8B /* DishCell.swift */,
 				AC9C129E2ADB36F500C1AE8B /* DishCell.xib */,
+				ACB06A632ADCAACC00BBC6AF /* dessertApiModel.swift */,
+				ACB06A652ADCADE000BBC6AF /* NetworkRequests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 				ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */,
 				AC101AD02ADC4469002DD473 /* TestVideoController.swift */,
 				AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */,
+				ACBF5A132AD9980000215D59 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 				ACBF5A4F2AD99A3B00215D59 /* FirebaseRemoteConfigSwift */,
 				ACBF5A512AD99A3B00215D59 /* FirebaseStorage */,
 				ACBF5A532AD99A3B00215D59 /* FirebaseStorageCombine-Community */,
+				ACB06A612ADC9A3900BBC6AF /* IQKeyboardManagerSwift */,
 			);
 			productName = "Recipes. Powered by Fetch";
 			productReference = ACBF5A072AD997FF00215D59 /* Recipes. Powered by Fetch.app */;
@@ -245,6 +254,7 @@
 			mainGroup = ACBF59FE2AD997FF00215D59;
 			packageReferences = (
 				ACBF5A1E2AD99A3B00215D59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				ACB06A602ADC9A3900BBC6AF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = ACBF5A082AD997FF00215D59 /* Products */;
 			projectDirPath = "";
@@ -283,9 +293,11 @@
 				ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */,
 				AC101AD12ADC4469002DD473 /* TestVideoController.swift in Sources */,
 				ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */,
+				ACB06A642ADCAACC00BBC6AF /* dessertApiModel.swift in Sources */,
 				AC9C129A2ADB194B00C1AE8B /* RecipesTableView.swift in Sources */,
 				AC9C129F2ADB36F500C1AE8B /* DishCell.swift in Sources */,
 				ACBF5A0D2AD997FF00215D59 /* SceneDelegate.swift in Sources */,
+				ACB06A662ADCADE000BBC6AF /* NetworkRequests.swift in Sources */,
 				AC9C12982AD9CA3600C1AE8B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +523,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		ACB06A602ADC9A3900BBC6AF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.15;
+			};
+		};
 		ACBF5A1E2AD99A3B00215D59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -522,6 +542,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		ACB06A612ADC9A3900BBC6AF /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACB06A602ADC9A3900BBC6AF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
 		ACBF5A1F2AD99A3B00215D59 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ACBF5A1E2AD99A3B00215D59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

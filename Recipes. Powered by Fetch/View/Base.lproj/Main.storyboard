@@ -157,41 +157,11 @@
                     <navigationItem key="navigationItem" id="SiK-eq-2oZ"/>
                     <connections>
                         <outlet property="tableViewOutlet" destination="tfn-oS-Zmf" id="Lwd-Yz-caB"/>
-                        <segue destination="T53-aS-un4" kind="show" identifier="Segue2" id="wOp-ze-djr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxK-jK-joi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1657.2519083969464" y="24.647887323943664"/>
-        </scene>
-        <!--Test Video Controller-->
-        <scene sceneID="EQz-Wk-omu">
-            <objects>
-                <viewController id="T53-aS-un4" customClass="TestVideoController" customModule="Recipes__Powered_by_Fetch" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s49-Vv-yYd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnd-y4-IiX">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ZKl-T5-Gyo"/>
-                        <constraints>
-                            <constraint firstItem="pnd-y4-IiX" firstAttribute="leading" secondItem="ZKl-T5-Gyo" secondAttribute="leading" id="CKe-LO-K7j"/>
-                            <constraint firstItem="ZKl-T5-Gyo" firstAttribute="trailing" secondItem="pnd-y4-IiX" secondAttribute="trailing" id="Ci6-lT-CSv"/>
-                            <constraint firstItem="ZKl-T5-Gyo" firstAttribute="bottom" secondItem="pnd-y4-IiX" secondAttribute="bottom" id="D9A-SO-hbK"/>
-                            <constraint firstItem="pnd-y4-IiX" firstAttribute="top" secondItem="ZKl-T5-Gyo" secondAttribute="top" id="slX-4k-Z3y"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="ZI0-GT-Z1Q"/>
-                    <connections>
-                        <outlet property="videoView" destination="pnd-y4-IiX" id="COo-E2-wX3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mPR-i0-udJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2652.6717557251909" y="36.619718309859159"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OIf-lm-ieP">

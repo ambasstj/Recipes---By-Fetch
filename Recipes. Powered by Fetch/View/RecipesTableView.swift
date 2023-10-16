@@ -14,21 +14,24 @@ class RecipesTableView: UIViewController {
     
     @IBOutlet weak var tableViewOutlet: UITableView!
     
+    var networkRequests: NetworkRequests?
+    var mealPH = [meals]()
+    
     override func viewDidLoad() {
         tableViewOutlet.dataSource = self
         tableViewOutlet.delegate = self
         tableViewOutlet.register(UINib(nibName: "DishCell", bundle: nil), forCellReuseIdentifier: K.reusableCell)
+        networkRequests = NetworkRequests()
+        networkRequests?.delegate = self
+        
+        networkRequests?.performRequest(with: networkRequests?.dessertsurl ?? "")
     }
-    
-    
-    
-    
 }
 
 extension RecipesTableView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return mealPH.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,14 +39,33 @@ extension RecipesTableView: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.reusableCell, for: indexPath)
         as! DishCell
         
-        cell.textLabel?.text = "\(indexPath.row)"
         cell.desertImage.isHidden = false
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: K.Segues.recipeCard, sender: self)
+       
+    }
+    
+}
+
+extension RecipesTableView: NetworkRequestsDelegate {
+    
+    func didFailWithError(error: Error) {
+        print(error.localizedDescription)
+    }
+    
+    func didPopulateArray(desserts: [meals]) {
+        mealPH = desserts
+        print(desserts[0].strMeal)
+        print(mealPH[0].idMeal)
+        
+        DispatchQueue.main.async {
+            self.tableViewOutlet.reloadData()
+        }
         
     }
+    
     
 }
