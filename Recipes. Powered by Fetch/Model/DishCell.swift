@@ -7,12 +7,14 @@
 
 import UIKit
 import AVFoundation
+import Kingfisher
 
 class DishCell: UITableViewCell {
     
     @IBOutlet weak var desertImage: UIImageView!
-    @IBOutlet weak var sparkleVideo: UIView!
-    @IBOutlet weak var sparkleVideo2: UIView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
     
     var player : AVPlayer!
     var avPlayerLayer : AVPlayerLayer!
@@ -21,6 +23,7 @@ class DishCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        desertImage.layer.cornerRadius = 5
     }
     
     

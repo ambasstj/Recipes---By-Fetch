@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 class RecipesTableView: UIViewController {
     
@@ -39,7 +40,9 @@ extension RecipesTableView: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.reusableCell, for: indexPath)
         as! DishCell
         
-        cell.desertImage.isHidden = false
+        cell.nameLabel.text = mealPH[indexPath.row].strMeal
+        cell.desertImage.kf.setImage(with: mealPH[indexPath.row].strMealThumb)
+        
         
         return cell
     }

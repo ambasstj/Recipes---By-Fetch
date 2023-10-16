@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import IQKeyboardManagerSwift
+import Kingfisher
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -15,6 +15,6 @@ struct dessertApiModel: Decodable{
 
 struct meals: Decodable {
     let strMeal: String
-    let strMealThumb: String
+    let strMealThumb: URL
     let idMeal: String
 }
