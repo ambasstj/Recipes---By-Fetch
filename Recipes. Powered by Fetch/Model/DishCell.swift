@@ -23,7 +23,7 @@ class DishCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        desertImage.layer.cornerRadius = 5
+        desertImage.layer.cornerRadius = 20
     }
     
     

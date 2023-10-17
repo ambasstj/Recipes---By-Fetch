@@ -15,16 +15,29 @@ class RecipesTableView: UIViewController {
     
     @IBOutlet weak var tableViewOutlet: UITableView!
     
+    @IBOutlet weak var button: UIButton!
+    
+    
     var networkRequests: NetworkRequests?
     var mealPH = [meals]()
+    var recipesPH: MealInfo?
+    var indexPH = Int()
+   
     
     override func viewDidLoad() {
+        navigationItem.title = "(っ˘ڡ˘ς)"
         tableViewOutlet.dataSource = self
         tableViewOutlet.delegate = self
         tableViewOutlet.register(UINib(nibName: "DishCell", bundle: nil), forCellReuseIdentifier: K.reusableCell)
         networkRequests = NetworkRequests()
         networkRequests?.delegate = self
         
+        
+        networkRequests?.performRequest(with: networkRequests?.dessertsurl ?? "")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+       
         networkRequests?.performRequest(with: networkRequests?.dessertsurl ?? "")
     }
 }
@@ -49,23 +62,37 @@ extension RecipesTableView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
+        indexPH = indexPath.row
+        var mealID = mealPH[indexPath.row].idMeal
+        networkRequests?.performRequest(with: (networkRequests?.idurl ?? "") + mealID)
+ 
+        performSegue(withIdentifier: K.Segues.loadedCard, sender: self)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if segue.identifier == K.Segues.loadedCard {
+            let destinationVC = segue.destination as! RecipeCard
+            destinationVC.name = recipesPH?.strMeal
+        }
+    }
 }
 
 extension RecipesTableView: NetworkRequestsDelegate {
+    func didFetchIDinfo(recipes: [MealInfo]) {
+        recipesPH = recipes[0]
+      
+    }
+    
     
     func didFailWithError(error: Error) {
-        print(error.localizedDescription)
+        print("this is where the error is \(error.localizedDescription)")
     }
     
     func didPopulateArray(desserts: [meals]) {
         mealPH = desserts
-        print(desserts[0].strMeal)
-        print(mealPH[0].idMeal)
         
         DispatchQueue.main.async {
             self.tableViewOutlet.reloadData()
+            self.tableViewOutlet.addSubview(self.button)
         }
         
     }

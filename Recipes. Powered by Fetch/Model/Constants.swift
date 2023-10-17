@@ -14,6 +14,7 @@ struct K{
     struct Segues{
         static let loginSeque = "Segue1"
         static let recipeCard = "Segue2"
+        static let loadedCard = "Segue3"
     }
     
 }

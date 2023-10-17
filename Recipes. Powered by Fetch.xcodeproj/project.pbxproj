@@ -21,6 +21,7 @@
 		ACB06A642ADCAACC00BBC6AF /* dessertApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06A632ADCAACC00BBC6AF /* dessertApiModel.swift */; };
 		ACB06A662ADCADE000BBC6AF /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06A652ADCADE000BBC6AF /* NetworkRequests.swift */; };
 		ACB06A692ADCE51700BBC6AF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ACB06A682ADCE51700BBC6AF /* Kingfisher */; };
+		ACB06A6B2ADD8C6100BBC6AF /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB06A6A2ADD8C6100BBC6AF /* RecipeCard.swift */; };
 		ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */; };
 		ACBF5A0D2AD997FF00215D59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */; };
 		ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */; };
@@ -70,6 +71,7 @@
 		AC9C129E2ADB36F500C1AE8B /* DishCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishCell.xib; sourceTree = "<group>"; };
 		ACB06A632ADCAACC00BBC6AF /* dessertApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dessertApiModel.swift; sourceTree = "<group>"; };
 		ACB06A652ADCADE000BBC6AF /* NetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
+		ACB06A6A2ADD8C6100BBC6AF /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 		ACBF5A072AD997FF00215D59 /* Recipes. Powered by Fetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipes. Powered by Fetch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF5A0A2AD997FF00215D59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBF5A0C2AD997FF00215D59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				ACBF5A0E2AD997FF00215D59 /* LoginViewController.swift */,
 				AC101AD02ADC4469002DD473 /* TestVideoController.swift */,
 				AC9C12992ADB194B00C1AE8B /* RecipesTableView.swift */,
+				ACB06A6A2ADD8C6100BBC6AF /* RecipeCard.swift */,
 				ACBF5A132AD9980000215D59 /* Assets.xcassets */,
 			);
 			path = View;
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBF5A0F2AD997FF00215D59 /* LoginViewController.swift in Sources */,
+				ACB06A6B2ADD8C6100BBC6AF /* RecipeCard.swift in Sources */,
 				AC101AD12ADC4469002DD473 /* TestVideoController.swift in Sources */,
 				ACBF5A0B2AD997FF00215D59 /* AppDelegate.swift in Sources */,
 				ACB06A642ADCAACC00BBC6AF /* dessertApiModel.swift in Sources */,
