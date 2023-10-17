@@ -270,6 +270,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hyI-jy-Mjy"/>
                     <connections>
+                        <outlet property="imageView" destination="4e1-hW-1QB" id="wai-kB-7y8"/>
                         <outlet property="nameLabel" destination="Xdn-C9-Ma8" id="Poh-53-uaQ"/>
                     </connections>
                 </viewController>

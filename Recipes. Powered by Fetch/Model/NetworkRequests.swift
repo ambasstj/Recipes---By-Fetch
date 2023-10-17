@@ -8,18 +8,24 @@
 import Foundation
 
 protocol NetworkRequestsDelegate {
+    
     func didFailWithError(error: Error)
     func didPopulateArray(desserts:[meals])
     func didFetchIDinfo(recipes: [MealInfo])
+    func refreshUI()
 }
+
+
 
 struct NetworkRequests {
     
+    var recipeCardVC = RecipeCard()
     let dessertsurl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert"
     let idurl = "https://www.themealdb.com/api/json/v1/1/lookup.php?i="
     var delegate: NetworkRequestsDelegate?
     var mealsPH: [meals]?
     var recipeInfo: [MealInfo]?
+    
     func performRequest(with urlString: String) {
         
         if let url = URL(string: urlString) {
@@ -36,10 +42,11 @@ struct NetworkRequests {
                         self.delegate?.didPopulateArray(desserts: dessertArray)
                     }
                     if urlString.contains("lookup"){
-                        print(urlString)
                         let infoArray = self.parseJSON2(safeData)
                         self.delegate?.didFetchIDinfo(recipes: infoArray)
-                    }}
+                        
+                    }
+                    }
             }
             task.resume()
         }
@@ -63,7 +70,6 @@ struct NetworkRequests {
         do {
             let decodedData = try decoder.decode(dishIDApiModel.self, from: rawSafeData)
             let infoArray = decodedData.meals
-            print("Parse Json2 Works")
             
             return infoArray
         } catch {

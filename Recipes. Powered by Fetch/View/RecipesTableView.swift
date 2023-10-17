@@ -19,10 +19,10 @@ class RecipesTableView: UIViewController {
     
     
     var networkRequests: NetworkRequests?
+    var recipeCardVC: RecipeCard?
     var mealPH = [meals]()
     var recipesPH: MealInfo?
     var indexPH = Int()
-   
     
     override func viewDidLoad() {
         navigationItem.title = "(っ˘ڡ˘ς)"
@@ -63,23 +63,36 @@ extension RecipesTableView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
         indexPH = indexPath.row
-        var mealID = mealPH[indexPath.row].idMeal
+        let mealID = mealPH[indexPath.row].idMeal
         networkRequests?.performRequest(with: (networkRequests?.idurl ?? "") + mealID)
- 
         performSegue(withIdentifier: K.Segues.loadedCard, sender: self)
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        
         if segue.identifier == K.Segues.loadedCard {
             let destinationVC = segue.destination as! RecipeCard
-            destinationVC.name = recipesPH?.strMeal
+            recipeCardVC = destinationVC
+            destinationVC.delegate = recipeCardVC
+          
         }
+        
     }
 }
 
 extension RecipesTableView: NetworkRequestsDelegate {
+    
+    func refreshUI() {
+        
+    }
+    
+   
+    
     func didFetchIDinfo(recipes: [MealInfo]) {
         recipesPH = recipes[0]
-      
+        //Commenting here so i remember later to use a cache inside a destination view controller when sending over values. This solved an issue I was having where the RecipeCard VC simply would not load the values in time. and I'd have to click back and forth just to get the previous value to load. Tried what felt like a million different approaches. This one works and makes sense to me.
+        recipeCardVC?.recipeCache = recipesPH
+        recipeCardVC?.refreshUI()
     }
     
     
@@ -94,8 +107,5 @@ extension RecipesTableView: NetworkRequestsDelegate {
             self.tableViewOutlet.reloadData()
             self.tableViewOutlet.addSubview(self.button)
         }
-        
     }
-    
-    
 }
