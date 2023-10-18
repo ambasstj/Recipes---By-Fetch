@@ -11,8 +11,6 @@ import Kingfisher
 
 class RecipesTableView: UIViewController {
     
-    @IBOutlet weak var navBarOutlet: UINavigationBar!
-    
     @IBOutlet weak var tableViewOutlet: UITableView!
     
     @IBOutlet weak var button: UIButton!
@@ -22,10 +20,10 @@ class RecipesTableView: UIViewController {
     var recipeCardVC: RecipeCard?
     var mealPH = [meals]()
     var recipesPH: MealInfo?
-    var indexPH = Int()
+
     
     override func viewDidLoad() {
-        navigationItem.title = "(っ˘ڡ˘ς)"
+        navigationItem.title = "Yum!"
         tableViewOutlet.dataSource = self
         tableViewOutlet.delegate = self
         tableViewOutlet.register(UINib(nibName: "DishCell", bundle: nil), forCellReuseIdentifier: K.reusableCell)
@@ -33,12 +31,7 @@ class RecipesTableView: UIViewController {
         networkRequests?.delegate = self
         
         
-        networkRequests?.performRequest(with: networkRequests?.dessertsurl ?? "")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-       
-        networkRequests?.performRequest(with: networkRequests?.dessertsurl ?? "")
+        networkRequests?.performRequest(with: networkRequests?.dessertsurl ?? "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
 }
 
@@ -62,7 +55,6 @@ extension RecipesTableView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
-        indexPH = indexPath.row
         let mealID = mealPH[indexPath.row].idMeal
         networkRequests?.performRequest(with: (networkRequests?.idurl ?? "") + mealID)
         performSegue(withIdentifier: K.Segues.loadedCard, sender: self)
@@ -73,8 +65,6 @@ extension RecipesTableView: UITableViewDataSource, UITableViewDelegate {
         if segue.identifier == K.Segues.loadedCard {
             let destinationVC = segue.destination as! RecipeCard
             recipeCardVC = destinationVC
-            destinationVC.delegate = recipeCardVC
-          
         }
         
     }

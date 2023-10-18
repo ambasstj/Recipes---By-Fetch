@@ -42,6 +42,7 @@ struct NetworkRequests {
                         self.delegate?.didPopulateArray(desserts: dessertArray)
                     }
                     if urlString.contains("lookup"){
+                        print(urlString)
                         let infoArray = self.parseJSON2(safeData)
                         self.delegate?.didFetchIDinfo(recipes: infoArray)
                         

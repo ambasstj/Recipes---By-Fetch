@@ -15,20 +15,10 @@ class DishCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     
-    
-    var player : AVPlayer!
-    var avPlayerLayer : AVPlayerLayer!
-    
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         desertImage.layer.cornerRadius = 20
     }
-    
-    
-    
-    
 }
     
     
