@@ -71,21 +71,15 @@ class RecipeCard: UIViewController{
     
     
     var recipeCache: MealInfo?
-    var instructions: String?
-    var delegate: NetworkRequestsDelegate?
-    var networkRequests: NetworkRequests?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        networkRequests = NetworkRequests()
-        networkRequests?.delegate = self
-        
+      
         nameLabel.text = recipeCache?.strMeal
         imageView.kf.setImage(with: recipeCache?.strMealThumb)
     }
     
     func refreshUI() {
-        print("refresh UI is being called")
         DispatchQueue.main.async {
             self.nameLabel.text = self.recipeCache?.strMeal
             self.imageView.kf.setImage(with: self.recipeCache?.strMealThumb)
@@ -130,21 +124,4 @@ class RecipeCard: UIViewController{
            
         }
     }
-}
-
-extension RecipeCard: NetworkRequestsDelegate {
-    
-    func didFailWithError(error: Error) {
-        
-    }
-    
-    func didPopulateArray(desserts: [meals]) {
-        
-    }
-    
-    func didFetchIDinfo(recipes: [MealInfo]) {
-        
-    }
-    
-    
 }

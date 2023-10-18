@@ -26,19 +26,19 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW8-RJ-7bg">
-                                        <rect key="frame" x="9.3333333333333428" y="198.66666666666669" width="411.33333333333326" height="99.333333333333314"/>
+                                        <rect key="frame" x="9.3333333333333428" y="198.66666666666669" width="411.33333333333326" height="79.666666666666686"/>
                                         <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="52"/>
                                         <color key="textColor" red="0.93725490570000003" green="0.67450982329999998" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="powered by fetch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMZ-dk-XAO">
-                                        <rect key="frame" x="0.0" y="303" width="430" height="57"/>
+                                        <rect key="frame" x="0.0" y="283.33333333333331" width="430" height="56.666666666666686"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.93725490570000003" green="0.67450982329999998" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vut-Fy-J4h">
-                                        <rect key="frame" x="0.0" y="390" width="430" height="198.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="355" width="430" height="198.66666666666663"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bones" translatesAutoresizingMaskIntoConstraints="NO" id="CQr-zL-FU6">
                                                 <rect key="frame" x="0.0" y="0.0" width="430" height="99.333333333333329"/>
@@ -49,19 +49,19 @@
                                         </subviews>
                                     </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2x-f1-cHd">
-                                        <rect key="frame" x="86" y="523.66666666666663" width="258" height="24.666666666666629"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="86" y="488.66666666666663" width="258" height="25"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4r5-jj-Djb">
-                                        <rect key="frame" x="86" y="424.33333333333337" width="258" height="24.666666666666686"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="86" y="389.33333333333331" width="258" height="24.666666666666686"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whh-0Q-CRH">
-                                        <rect key="frame" x="110" y="606.66666666666663" width="210" height="34.333333333333371"/>
+                                        <rect key="frame" x="110" y="571.66666666666663" width="210" height="34.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Login">
                                             <color key="baseBackgroundColor" red="0.93725490570000003" green="0.67450982329999998" blue="0.25490197539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -71,7 +71,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbn-hk-RON">
-                                        <rect key="frame" x="20" y="671" width="390" height="104"/>
+                                        <rect key="frame" x="20" y="636" width="390" height="139"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="New user? Create an account."/>
                                         <connections>
@@ -95,7 +95,7 @@
                                     <constraint firstItem="gW8-RJ-7bg" firstAttribute="width" secondItem="Vpz-zG-SLK" secondAttribute="height" multiplier="131:253" id="VUc-4L-iB1"/>
                                     <constraint firstItem="k2x-f1-cHd" firstAttribute="width" secondItem="Zo5-NQ-6CT" secondAttribute="width" multiplier="3:5" id="Wqq-NH-O0D"/>
                                     <constraint firstItem="xbn-hk-RON" firstAttribute="top" secondItem="Whh-0Q-CRH" secondAttribute="bottom" constant="30" id="YlB-a8-rZb"/>
-                                    <constraint firstItem="vut-Fy-J4h" firstAttribute="top" secondItem="mMZ-dk-XAO" secondAttribute="bottom" constant="30" id="ZSH-vC-do7"/>
+                                    <constraint firstItem="vut-Fy-J4h" firstAttribute="top" secondItem="mMZ-dk-XAO" secondAttribute="bottom" constant="15" id="ZSH-vC-do7"/>
                                     <constraint firstItem="vut-Fy-J4h" firstAttribute="leading" secondItem="Vpz-zG-SLK" secondAttribute="leading" id="a1H-jh-ibM"/>
                                     <constraint firstItem="k2x-f1-cHd" firstAttribute="height" secondItem="Zo5-NQ-6CT" secondAttribute="height" multiplier="1:4" id="aSl-2C-pfE"/>
                                     <constraint firstAttribute="trailing" secondItem="xbn-hk-RON" secondAttribute="trailing" constant="20" symbolic="YES" id="doO-k4-DGc"/>
@@ -111,7 +111,7 @@
                                     <constraint firstItem="mMZ-dk-XAO" firstAttribute="top" secondItem="gW8-RJ-7bg" secondAttribute="bottom" constant="5" id="uLV-fF-B8G"/>
                                     <constraint firstItem="mMZ-dk-XAO" firstAttribute="height" secondItem="Vpz-zG-SLK" secondAttribute="height" multiplier="1:14" id="vqf-2v-jQr"/>
                                     <constraint firstItem="4r5-jj-Djb" firstAttribute="height" secondItem="CQr-zL-FU6" secondAttribute="height" multiplier="1:4" id="yIi-9U-P9T"/>
-                                    <constraint firstItem="gW8-RJ-7bg" firstAttribute="height" secondItem="Vpz-zG-SLK" secondAttribute="height" multiplier="1:8" id="zce-BQ-qtC"/>
+                                    <constraint firstItem="gW8-RJ-7bg" firstAttribute="height" secondItem="Vpz-zG-SLK" secondAttribute="height" multiplier="1:10" id="zce-BQ-qtC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -146,12 +146,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tfn-oS-Zmf">
                                 <rect key="frame" x="0.0" y="103" width="430" height="795"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0J1-nL-tVt">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                </button>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gep-ZG-6Ck"/>
@@ -165,7 +159,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="SiK-eq-2oZ"/>
                     <connections>
-                        <outlet property="button" destination="0J1-nL-tVt" id="Ale-Jo-U1C"/>
                         <outlet property="tableViewOutlet" destination="tfn-oS-Zmf" id="Lwd-Yz-caB"/>
                         <segue destination="mou-I2-yZM" kind="show" identifier="Segue3" id="XNL-rP-2iv"/>
                     </connections>
@@ -197,22 +190,28 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa5-eZ-6yU">
                                                 <rect key="frame" x="15" y="89.666666666666657" width="400" height="103.66666666666666"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-JW-h5F">
-                                                        <rect key="frame" x="15" y="0.0" width="385" height="125"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-JW-h5F">
+                                                        <rect key="frame" x="0.0" y="0.0" width="400" height="103.66666666666667"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="'Bone'-Appetit!" translatesAutoresizingMaskIntoConstraints="NO" id="foL-84-qUs">
-                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="103.66666666666667"/>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add a heading" translatesAutoresizingMaskIntoConstraints="NO" id="wV1-Mb-CR0">
-                                                                <rect key="frame" x="130" y="0.0" width="125" height="125"/>
+                                                                <rect key="frame" x="135" y="0.0" width="130" height="103.66666666666667"/>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="'Bone'-Appetit!" translatesAutoresizingMaskIntoConstraints="NO" id="X4P-2c-a8v">
-                                                                <rect key="frame" x="260" y="0.0" width="125" height="125"/>
+                                                                <rect key="frame" x="270" y="0.0" width="130" height="103.66666666666667"/>
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="8T6-JW-h5F" firstAttribute="leading" secondItem="Oa5-eZ-6yU" secondAttribute="leading" id="64y-su-9Mz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8T6-JW-h5F" secondAttribute="bottom" id="7Va-cT-e4j"/>
+                                                    <constraint firstItem="8T6-JW-h5F" firstAttribute="top" secondItem="Oa5-eZ-6yU" secondAttribute="top" id="eRG-mG-FIU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8T6-JW-h5F" secondAttribute="trailing" id="lX7-Om-uIh"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Rf-ja-R43">
                                                 <rect key="frame" x="0.0" y="193.33333333333334" width="430" height="503.33333333333326"/>
@@ -233,20 +232,20 @@
                                                 <rect key="frame" x="0.0" y="706.66666666666663" width="430" height="233"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-hC-gwH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="430" height="232.99999999999989"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="430" height="233"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COe-YJ-a4l" userLabel="content view">
                                                                 <rect key="frame" x="0.0" y="0.0" width="430" height="526.33333333333337"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUI-Jf-6Xm">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUI-Jf-6Xm">
                                                                         <rect key="frame" x="165.66666666666666" y="5" width="98.666666666666657" height="20.333333333333332"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HL-IK-3Ui">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HL-IK-3Ui">
                                                                         <rect key="frame" x="2" y="40.333333333333371" width="428" height="485"/>
-                                                                        <mutableString key="text">"Preheat oven to 350° F. Spray a 9x13-inch baking pan with non-stick spray. Combine soy sauce, ½ cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling. Meanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan and stir to combine. Cook until the sauce starts to thicken then remove from heat. Place the chicken breasts in the prepared pan. Pour one cup of the sauce over top of chicken. Place chicken in oven and bake 35 minutes or until cooked through. Remove from oven and shred chicken in the dish using two forks. *Meanwhile, steam or cook the vegetables according to package directions. Add the cooked vegetables and rice to the casserole dish with the chicken. Add most of the remaining sauce, reserving a bit to drizzle over the top when serving. Gently toss everything together in the casserole dish until combined. Return to oven and cook 15 minutes. Remove from oven and let stand 5 minutes before serving. Drizzle each serving with remaining sauce. Enjoy!",</mutableString>
+                                                                        <string key="text">"Preheat oven to 350° F. Spray a 9x13-inch baking pan with non-stick spray. Combine soy sauce, ½ cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling. Meanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan and stir to combine. Cook until the sauce starts to thicken then remove from heat. Place the chicken breasts in the prepared pan. Pour one cup of the sauce over top of chicken. Place chicken in oven and bake 35 minutes or until cooked through. Remove from oven and shred chicken in the dish using two forks. *Meanwhile, steam or cook the vegetables according to package directions. Add the cooked vegetables and rice to the casserole dish with the chicken. Add most of the remaining sauce, reserving a bit to drizzle over the top when serving. Gently toss everything together in the casserole dish until combined. Return to oven and cook 15 minutes. Remove from oven and let stand 5 minutes before serving. Drizzle each serving with remaining sauce. Enjoy!",</string>
                                                                         <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>

@@ -19,7 +19,6 @@ protocol NetworkRequestsDelegate {
 
 struct NetworkRequests {
     
-    var recipeCardVC = RecipeCard()
     let dessertsurl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert"
     let idurl = "https://www.themealdb.com/api/json/v1/1/lookup.php?i="
     var delegate: NetworkRequestsDelegate?
@@ -33,10 +32,11 @@ struct NetworkRequests {
             let task = session.dataTask(with: url) { (data, response, error) in
                 
                 if error != nil {
-                    print (error?.localizedDescription)
+                    print (error?.localizedDescription ?? "Something went wrong with your session task")
                     return
                 }
                 if let safeData = data {
+                    
                     if urlString == dessertsurl{
                         let dessertArray = self.parseJSON(safeData)
                         self.delegate?.didPopulateArray(desserts: dessertArray)
@@ -45,7 +45,6 @@ struct NetworkRequests {
                         print(urlString)
                         let infoArray = self.parseJSON2(safeData)
                         self.delegate?.didFetchIDinfo(recipes: infoArray)
-                        
                     }
                     }
             }

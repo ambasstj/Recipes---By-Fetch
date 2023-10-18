@@ -13,8 +13,6 @@ class RecipesTableView: UIViewController {
     
     @IBOutlet weak var tableViewOutlet: UITableView!
     
-    @IBOutlet weak var button: UIButton!
-    
     
     var networkRequests: NetworkRequests?
     var recipeCardVC: RecipeCard?
@@ -87,7 +85,7 @@ extension RecipesTableView: NetworkRequestsDelegate {
     
     
     func didFailWithError(error: Error) {
-        print("this is where the error is \(error.localizedDescription)")
+        print(error.localizedDescription)
     }
     
     func didPopulateArray(desserts: [meals]) {
@@ -95,7 +93,7 @@ extension RecipesTableView: NetworkRequestsDelegate {
         
         DispatchQueue.main.async {
             self.tableViewOutlet.reloadData()
-            self.tableViewOutlet.addSubview(self.button)
+           
         }
     }
 }
