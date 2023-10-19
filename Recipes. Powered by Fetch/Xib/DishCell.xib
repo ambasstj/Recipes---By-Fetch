@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="135" id="KGk-i7-Jjw" customClass="DishCell" customModule="Recipes__Powered_by_Fetch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-Yo-AbM">
+                        <rect key="frame" x="0.0" y="0.0" width="318" height="135"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ubh-sE-e6P">
+                                <rect key="frame" x="123.33333333333333" y="4" width="190.66666666666669" height="127"/>
+                                <imageReference key="image" image="Bones" symbolScale="large"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VA-VY-GCA">
+                                <rect key="frame" x="0.0" y="10" width="123.33333333333333" height="110"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="quinaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7VA-VY-GCA" secondAttribute="bottom" constant="15" id="3FU-zg-Xsb"/>
+                            <constraint firstItem="ubh-sE-e6P" firstAttribute="width" secondItem="f3b-Yo-AbM" secondAttribute="width" multiplier="3:5" id="3KZ-cS-d2n"/>
+                            <constraint firstItem="7VA-VY-GCA" firstAttribute="leading" secondItem="f3b-Yo-AbM" secondAttribute="leading" id="69p-Za-rOX"/>
+                            <constraint firstAttribute="trailing" secondItem="ubh-sE-e6P" secondAttribute="trailing" constant="4" id="99t-eD-0a8"/>
+                            <constraint firstItem="ubh-sE-e6P" firstAttribute="leading" secondItem="7VA-VY-GCA" secondAttribute="trailing" id="FeD-ms-g5d"/>
+                            <constraint firstItem="ubh-sE-e6P" firstAttribute="top" secondItem="f3b-Yo-AbM" secondAttribute="top" constant="4" id="Lhd-Ee-5LK"/>
+                            <constraint firstAttribute="bottom" secondItem="ubh-sE-e6P" secondAttribute="bottom" constant="4" id="Mcl-3F-QPG"/>
+                            <constraint firstAttribute="height" constant="135" id="anl-8w-xeS"/>
+                            <constraint firstItem="7VA-VY-GCA" firstAttribute="top" secondItem="f3b-Yo-AbM" secondAttribute="top" constant="10" id="tHp-2v-Dic"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="f3b-Yo-AbM" secondAttribute="trailing" id="O2C-kx-BNE"/>
+                    <constraint firstItem="f3b-Yo-AbM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dJE-5k-Q7S"/>
+                    <constraint firstItem="f3b-Yo-AbM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ggN-bJ-eKQ"/>
+                    <constraint firstAttribute="bottom" secondItem="f3b-Yo-AbM" secondAttribute="bottom" id="h5u-Rr-KVv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="desertImage" destination="ubh-sE-e6P" id="WYc-1Q-mtA"/>
+                <outlet property="nameLabel" destination="7VA-VY-GCA" id="o4b-Vk-TWz"/>
+            </connections>
+            <point key="canvasLocation" x="151.14503816793894" y="-306.69014084507046"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bones" width="270" height="100"/>
+    </resources>
+</document>
